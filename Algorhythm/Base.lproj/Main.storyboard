@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-dJ-8ca">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-dJ-8ca">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,6 +36,7 @@
                             </button>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dKN-dJ-8ca" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="85Y-xG-7hL"/>
                             <constraint firstItem="dKN-dJ-8ca" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HGn-88-CxI"/>
@@ -44,6 +45,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="ebD-tT-khY"/>
+                    <connections>
+                        <outlet property="playlistButton0" destination="ozc-Pl-4OS" id="b3t-QB-bxD"/>
+                        <outlet property="playlistImageView0" destination="dKN-dJ-8ca" id="hUN-XI-KQD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,8 +66,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAZ-FY-ZqT">
-                                <rect key="frame" x="41" y="273" width="239" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAZ-FY-ZqT">
+                                <rect key="frame" x="41" y="273.5" width="239" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,6 +76,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.68040368449999999" green="0.94752513110000003" blue="0.40320218340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PAZ-FY-ZqT" firstAttribute="centerY" secondItem="w6n-OY-nUv" secondAttribute="centerY" id="Dud-Iq-mSM"/>
+                            <constraint firstItem="PAZ-FY-ZqT" firstAttribute="centerX" secondItem="w6n-OY-nUv" secondAttribute="centerX" id="sRI-b5-Mqa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NUx-6L-ekn"/>
                     <connections>
@@ -102,6 +111,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee" width="53" height="107"/>
+        <image name="placeholder" width="66" height="73"/>
     </resources>
 </document>

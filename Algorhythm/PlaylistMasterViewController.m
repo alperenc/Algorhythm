@@ -8,6 +8,7 @@
 
 #import "PlaylistMasterViewController.h"
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -17,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Playlist *playlist = [[Playlist alloc] initWithIndex:0];
+    self.playlistImageView0.image = playlist.playlistIcon;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +31,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
         PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailController.segueLabelText = @"Yay! You pressed the button!";
+        playlistDetailController.playlist = [[Playlist alloc] initWithIndex:0];
         
     }
 }
